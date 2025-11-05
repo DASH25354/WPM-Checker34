@@ -127,12 +127,16 @@
 
 <!-- テキスト -->
 <div id="text">
-【22】Halloween began long ago in Celtic lands. People had a festival called Samhain on October 31. They thought spirits could visit on that night. So they lit fires and wore simple masks to protect their homes. Later, Romans added harvest customs to Samhain. In the 7th century, the Christian church made November 1 All Saints’ Day. The night before became All Hallows’ Eve, or Halloween. Traditions slowly mixed. People carved turnips first, and later pumpkins, to make jack-o’-lanterns. Children dressed up and went to houses to ask for sweets. This became trick-or-treat. In the 19th century, immigrants carried these customs to North America. In the 20th century, towns held parties and games. Shops sold costumes and candy. Movies and stories made Halloween feel spooky and fun. Today, Halloween is a happy celebration in many countries. People enjoy costumes, pumpkins, and candy, but the old ideas from Samhain are still part of the holiday.</div>
+【24】Students, next week you will interview professionals. Today I speak about Mehrabian’s rule. This rule is about feelings and attitude. It says three parts work together: words (about 7%), voice (about 38%), and body language (about 55%). When words and feelings do not match, people trust voice and body more than words. So, your tone and your body are very important. This rule is a guide, not a perfect law for every talk, but it can help you make a strong interview. 
+Use this idea in your interview. Your words should be simple and clear. Your voice should be warm and calm. Your body should show respect. Sit up straight. Smile. Look at their eyes sometimes. Nod to show “I understand.” Do not cross your arms. Keep your hands relaxed. These small actions can spark trust.
+Listen with care. Use short phrases: “I see,” “Thank you,” “That’s interesting.” Repeat key ideas to check: “So, you started this job in 2019, right?” Ask open questions and let the other person speak. 
+In the end, say, “Thank you for your time. I learned a lot.” Remember: words matter, but voice and body often guide feelings. Let your words be simple, your tone kind, and your body language positive.
+</div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="22.mp3" type="audio/mpeg">
+    <source src="24.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -145,11 +149,11 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> Halloween has roots in an old Celtic event named Samhain. 
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Mehrabian’s rule says body language is 100% of communication, so words do not matter.
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> All Hallows’ Eve happens on the day after November.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> In modern times, people often cut faces into pumpkins for lanterns. </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> The place where Halloween first became very popular was Africa. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Mehrabian’s rule says that when words and feelings do not match, people trust voice and body more than words.</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> The rule is a perfect law for every talk and always gives the same result. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> In interviews, simple words, a warm voice, and respectful body language can spark trust and help make a strong interview. </span>
 </div>
 
 <div id="result"></div>
@@ -169,8 +173,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: a, c
-  const correctAnswers = ["a", "c"];
+  // 正解選択肢: b, d
+  const correctAnswers = ["b", "d"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -195,6 +199,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 

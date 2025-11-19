@@ -127,7 +127,10 @@
 
 <!-- テキスト -->
 <div id="text">
-【29】Black Friday is the Friday after Thanksgiving in the United States. It is the start of holiday shopping. Many stores have big sales and special deals. People line up early. Some buy in stores, and many buy online. The word “Black” can mean that stores move from losing money to making money. Over time, Black Friday spread to other countries, like Japan. Big chains also make sales there. Shoppers plan by checking prices, making a wish list, and reading ads. Stores plan by adding stock, staff, and safety steps to help large crowds. There can be long lines and some chaos, but many people now like online deals. Sales often start early and go on through the weekend to Cyber Monday. Black Friday is an important day for business and culture. It changes how stores sell and how people buy during the holiday season.
+【31】The ginkgo tree is a very old tree. It was here when dinosaurs were on Earth. People call it a “living fossil.” The leaves are like small fans and turn bright yellow in fall. Many people like to walk under the yellow trees and take photos. The tree can live for a long time, even more than one thousand years. It is strong and can live in cities with smoke and cars.
+　The ginkgo is very strong in fire and heat. In World War II, the atomic bomb fell on Hiroshima. The bomb made great heat and fire in the city. Many trees died in the fire, but some ginkgo trees lived and grew again. People saw hope in the new green leaves. This shows that the ginkgo is tough and can stand strong heat and fire. ja.wikipedia.org
+　The ginkgo seed has a very strong smell. Some people do not like it. But the seed can be eaten after cooking. Many people enjoy it in food. In spring, flowers are small. In summer, leaves give cool shade. In fall, the leaves are bright yellow. In winter, the tree rests, and then the cycle starts again.
+　In Japan, many schools and parks have ginkgo trees. Sanda Gakuen also has ginkgo trees, and students can see the yellow leaves in fall. The ginkgo is part of city life and school life. It is an old, strong, and beautiful tree that people can enjoy every year.
 </div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
@@ -146,12 +149,12 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> Black Friday starts holiday shopping. Stores have big sales, and many people buy online. It shapes how stores plan and how people shop. 
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> 松
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> Black Friday is a small local party after Thanksgiving. People only enjoy food and parades. It has no business effect.</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> Black Friday is a government rule day when all stores must cut prices the same.
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> 竹</span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> 桜
  </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> The Friday after Thanksgiving has big deals and doorbusters. Stores move “into the black,” and the event now spreads worldwide and to Cyber Monday. 
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> 銀杏
 
  </span>
 </div>
@@ -173,8 +176,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: a, d
-  const correctAnswers = ["a", "d"];
+  // 正解選択肢: d
+  const correctAnswers = ["d"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -199,6 +202,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 

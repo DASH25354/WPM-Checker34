@@ -127,16 +127,17 @@
 
 <!-- テキスト -->
 <div id="text">
-【31】The ginkgo tree is a very old tree. It was here when dinosaurs were on Earth. People call it a “living fossil.” The leaves are like small fans and turn bright yellow in fall. Many people like to walk under the yellow trees and take photos. The tree can live for a long time, even more than one thousand years. It is strong and can live in cities with smoke and cars.
-　The ginkgo is very strong in fire and heat. In World War II, the atomic bomb fell on Hiroshima. The bomb made great heat and fire in the city. Many trees died in the fire, but some ginkgo trees lived and grew again. People saw hope in the new green leaves. This shows that the ginkgo is tough and can stand strong heat and fire. ja.wikipedia.org
-　The ginkgo seed has a very strong smell. Some people do not like it. But the seed can be eaten after cooking. Many people enjoy it in food. In spring, flowers are small. In summer, leaves give cool shade. In fall, the leaves are bright yellow. In winter, the tree rests, and then the cycle starts again.
-　In Japan, many schools and parks have ginkgo trees. Sanda Gakuen also has ginkgo trees, and students can see the yellow leaves in fall. The ginkgo is part of city life and school life. It is an old, strong, and beautiful tree that people can enjoy every year.
+【34】Rudolph was a reindeer born with a bright red nose. Because of his nose, the other reindeer always made fun of him. Rudolph felt very sad and had no confidence in himself.
+　One Christmas Eve, Santa Claus was ready to leave to deliver presents. He had eight famous reindeer to pull his sleigh. However, suddenly a very thick fog covered the sky. It became difficult to see.
+　Santa was in trouble. He said, "It is too dark. I cannot find the chimneys." He could not start his journey in the dark. Then, Santa noticed a crowd looking at something. It was Rudolph. His red nose was shining like a light. Santa walked toward him, but Rudolph was crying. He thought Santa came to laugh at his nose, too.
+　Instead, Santa asked for his help. He said, "You are different, but that is why you are great. Your shiny nose is not bad. It can light up the dark night road. You can be very useful!"
+　That night, Rudolph ran at the front of the team. Thanks to his bright nose, they delivered all the presents safely. Rudolph became a hero and the most popular reindeer. The red nose he once hated became his special power. Since that year, nine reindeer pull the sleigh. Rudolph is always at the front, helping Santa carry dreams to the world.
 </div>
 
 <!-- 音声再生（英文の下、ボタンの上） -->
 <div class="audio-wrapper">
   <audio controls>
-    <source src="29.mp3" type="audio/mpeg">
+    <source src="34.mp3" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 </div>
@@ -149,14 +150,14 @@
 <div id="questions">
   <h3>Quiz</h3>
   <label>Select all options below that match the content of the passage.</label></span>
-  <span class="question-option"><input type="checkbox" class="q1" value="a"> 松
+  <span class="question-option"><input type="checkbox" class="q1" value="a"> Santa Claus was angry at Rudolph because his red nose was too bright and woke up the other reindeer. 
 </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="b"> 竹</span>
-  <span class="question-option"><input type="checkbox" class="q1" value="c"> 桜
+  <span class="question-option"><input type="checkbox" class="q1" value="b"> Rudolph was sad because others made fun of his nose, but Santa needed his shiny nose to see through the thick fog. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="c"> The eight reindeer got lost in the sky, so they went back to the North Pole to find Rudolph. 
  </span>
-  <span class="question-option"><input type="checkbox" class="q1" value="d"> 銀杏
-
- </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="d"> Rudolph put a special light on his nose to help Santa, but it broke before they finished delivering presents. </span>
+　<span class="question-option"><input type="checkbox" class="q1" value="e"> Rudolph led the sleigh to deliver presents safely, and his unique nose made him a hero among the reindeer. </span>
+  <span class="question-option"><input type="checkbox" class="q1" value="f"> Santa Claus decided to cancel Christmas because the fog was too thick, but Rudolph convinced him to go.</span>
 </div>
 
 <div id="result"></div>
@@ -176,8 +177,8 @@ function finishReading() {
   if (!startTime) return alert("Please start reading first!");
   const elapsedSec = (Date.now() - startTime) / 1000;
 
-  // 正解選択肢: d
-  const correctAnswers = ["d"];
+  // 正解選択肢: b,e
+  const correctAnswers = ["b","e"];
   const checked = Array.from(document.querySelectorAll(".q1:checked")).map(el => el.value);
   const numCorrect = checked.filter(val => correctAnswers.includes(val)).length;
   const numIncorrect = checked.filter(val => !correctAnswers.includes(val)).length;
@@ -202,6 +203,7 @@ function finishReading() {
 
 </body>
 </html>
+
 
 
 
